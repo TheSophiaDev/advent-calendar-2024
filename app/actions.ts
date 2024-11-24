@@ -17,3 +17,13 @@ export async function testDatabaseConnection() {
     return isConnected;
   }
 }
+
+export async function readDatasetForDay(day: number): Promise<any | null> {
+  // connect to MongoDB
+  const mongoClient = await client.connect();
+  // get the dataset
+  return await mongoClient
+    .db("advent-calendar-2024")
+    .collection("advent-calendar-2024")
+    .findOne({ day: day });
+}
