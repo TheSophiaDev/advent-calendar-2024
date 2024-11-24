@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <main className="flex h-full min-h-screen w-full flex-wrap justify-center gap-8 bg-[url(/bg.jpg)] bg-cover bg-center p-10">
+        <main className="flex h-full min-h-screen w-full flex-wrap justify-center gap-8 bg-cover bg-center p-10">
           {children}
         </main>
       </body>
