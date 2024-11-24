@@ -13,7 +13,7 @@ export default async function Page({
   const day = Number(params.day);
   let dataset;
 
-  if (isValidMonth(10) !== true || isValidDay(day) !== true) {
+  if (isValidMonth(12) !== true || isValidDay(day) !== true) {
     redirect("/");
   }
   try {
